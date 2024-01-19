@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website Evaluation Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left Section for Survey Title -->
+        <div class="title-section">
+            <h1 class="aesthetic-title">Website Evaluation</h1>
+        </div>
+
+        <!-- Right Section for Survey Form -->
+        <div class="survey-section">
+
+            <div id="evaluationImage">
+                <a href="https://your-website-link.com" target="_blank">
+                    <img src="1234.png" alt="Website UI" width="50%">
+                </a>
+            </div>
+
+            <form id="evaluationForm">
+
+                <div class="question">
+                    <label for="textQuestion">1. Share your thoughts about the website's design:</label>
+                    <textarea id="textQuestion" name="textQuestion" required=""></textarea>
+                </div>
+            
+                <div class="question">
+                    <label>2. Rate the overall satisfaction with the website:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="choice1a" name="satisfactionRating" value="Very Satisfied" required="">
+                        <label for="choice1a">Very Satisfied</label>
+            
+                        <input type="radio" id="choice1b" name="satisfactionRating" value="Satisfied" required="">
+                        <label for="choice1b">Satisfied</label>
+            
+                        <input type="radio" id="choice1c" name="satisfactionRating" value="Neutral" required="">
+                        <label for="choice1c">Neutral</label>
+            
+                        <input type="radio" id="choice1d" name="satisfactionRating" value="Dissatisfied" required="">
+                        <label for="choice1d">Dissatisfied</label>
+            
+                        <input type="radio" id="choice1e" name="satisfactionRating" value="Very Dissatisfied" required="">
+                        <label for="choice1e">Very Dissatisfied</label>
+                    </div>
+                </div>
+            
+                <div class="question">
+                    <label>3. Select the features you find useful (multiple selections allowed):</label>
+                    <div class="checkbox-options">
+                        <input type="checkbox" id="checkbox1" name="usefulFeatures[]" value="User-friendly Navigation">
+                        <label for="checkbox1">User-friendly Navigation</label>
+            
+                        <input type="checkbox" id="checkbox2" name="usefulFeatures[]" value="Engaging Content">
+                        <label for="checkbox2">Engaging Content</label>
+            
+                        <input type="checkbox" id="checkbox3" name="usefulFeatures[]" value="Fast Loading Time">
+                        <label for="checkbox3">Fast Loading Time</label>
+                    </div>
+                </div>
+            
+                <div class="question">
+                    <label for="comments">4. Any additional comments or suggestions?</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+            
+                <div class="question">
+                    <label>5. How likely are you to recommend this website to others?</label>
+                    <select id="recommendation" name="recommendation" required="">
+                        <option value="Very Likely">Very Likely</option>
+                        <option value="Likely">Likely</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Unlikely">Unlikely</option>
+                        <option value="Very Unlikely">Very Unlikely</option>
+                    </select>
+                </div>
+            
+                <div class="question">
+                    <label for="improvements">6. What improvements would you suggest for the website?</label>
+                    <textarea id="improvements" name="improvements" required=""></textarea>
+                </div>
+            
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            
+            </form>
+            
+            <div id="signature">
+                Website designed by Avneesh Chaudhary
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
